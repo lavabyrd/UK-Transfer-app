@@ -13,5 +13,6 @@ the file is not | finished. This may cause an error and should be addressed. If 
 note:
 the original c# script was specced by Mark Preston but designed and written by https://gist.github.com/raylu
 The compiled .exe can be found at https://www.raylu.net/f/import111.exe
+The script has also been provide in Python but cannot be used due to clientside limitations
 
 Many thanks to Raylu for the help with this and the guys over at ##learnprogramming on FreeNode
