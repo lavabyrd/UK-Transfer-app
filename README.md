@@ -8,10 +8,9 @@ The files should be placed in one folder, c:\new\ , the Batch file will move the
 
 Potential issues:
 
-the file is not | finished. This may cause an error and should be addressed. If so, can be recompiled in vbs. Confirmed this may not be issue
-
 Fixed issues:
 The batch file was removing the files before the .exe was running. Adding a /wait ensured this didn't happen.
+updated to add a "|" at the end of each line as well as the file name from .psv to .csv as per request
 
 note:
 the original c# script was specced by Mark Preston but designed and written by https://gist.github.com/raylu
