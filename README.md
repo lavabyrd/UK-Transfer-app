@@ -9,8 +9,10 @@ Requirements
 This must be easily usable on a client machine on a chron job running in the background. It is worth noting this will still create a popup but a VB script could be used to bypass that. So far this is not a requirement. 
 The files should be placed in one folder, c:\new\ , the Batch file will move them to c:\import\ and then run the .exe. the .exe written in c# will then move the file to \output and .bat will remove the files from the import folder
 
-Potential issues
-================
+Concerns
+========
+
+The python script is not yet up to date for file naming, ammeding and moving. Needs to be completed. 
 
 
 Fixed issues
