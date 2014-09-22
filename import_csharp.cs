@@ -23,12 +23,12 @@ namespace import111 {
 			foreach (string filepath in Directory.EnumerateFiles(path)) {
 				Console.Write(filepath + ": ");
 				StreamReader reader = File.OpenText(filepath);
-				string outputName = Path.GetFileNameWithoutExtension(filepath) + "_1.psv";
+				string outputName = Path.GetFileNameWithoutExtension(filepath) + "_1.csv";
 				FileStream writer = File.OpenWrite(Path.Combine(outputDir, outputName));
 				string contents = reader.ReadToEnd().TrimEnd(new char[]{'\r', '\n'});
 				reader.Close();
 				string[] split = contents.Split(new char[]{'|'});
-				string outputStr = contents + "|" + split[column - 1];
+				string outputStr = contents + "|" + split[column - 1] + "|";
 				byte[] output = Encoding.UTF8.GetBytes(outputStr);
 				writer.Write(output, 0, output.Length);
 				writer.Close();
