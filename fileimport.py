@@ -12,6 +12,6 @@ def importing():
 				writer = csv.writer(outfile,delimiter = '|', quoting = csv.QUOTE_MINIMAL)
 				for row in reader:
 					if row[5] == "6":
-						row.append(row[5])
+						row.append(row[5]+ "|")
 						writer.writerow(row)
 importing()
